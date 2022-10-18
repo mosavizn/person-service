@@ -56,6 +56,7 @@ public class PersonController {
         return PersonService.deletePersonById(id);
     }
 
+
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public GenericRestResponse handleValidationException(){
             return new GenericRestResponse(GenericRestResponse.STATUS.FAILURE,
