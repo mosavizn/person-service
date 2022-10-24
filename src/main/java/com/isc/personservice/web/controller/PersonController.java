@@ -48,7 +48,7 @@ public class PersonController {
     }
 
     @PostMapping(value = "/deletePerson")
-    @ApiOperation(value = "REST request to delete a Person",
+    @ApiOperation(value = "REST request to delete Person with id",
         produces = "Application/JSON", response = GenericRestResponse.class, httpMethod = "POST")
     public GenericRestResponse deletePerson(
         @RequestBody @ApiParam(value = "person Id", example = "1" ,required = true) @Valid Long id) {
